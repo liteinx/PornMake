@@ -1,0 +1,96 @@
+ body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.png'); /* Replace with your background image URL */
+    background-position: center center;
+    background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Use Roboto as the font family with a fallback to a generic sans-serif font */
+}
+
+nav {
+    background-color: #333;
+    padding: 5px;
+  padding-left: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title {
+    background-color: black;
+    color: white;
+    padding: 5px; /* Adjust the padding as needed */
+    border-radius: 5px; /* Add rounded corners for the background */
+}
+
+.zero {
+    background-color: #f19b17;
+    margin-left: 5px; /* Add margin to the left of "Zero" */
+    padding: 2px 5px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners for the background */
+  color: black;
+}
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.popup {
+            position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #f19b17; /* Changed text color to orange (#f19b17) */
+    padding: 20px; /* Increased padding for a larger box */
+    border-radius: 10px; /* Increased border-radius for rounded corners */
+    text-align: center;
+    z-index: 1000;
+    font-size: 24px; /* Increased text size to 24px */
+        }
