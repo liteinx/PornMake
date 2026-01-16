@@ -21,8 +21,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Animated Background Orbs -->
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
     <!-- Language Switcher -->
-    <div class="language-switcher">
+    <div class="language-switcher glass-effect">
         <button class="lang-btn" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="ar">عربي</button>
         <button class="lang-btn" data-lang="es">ES</button>
@@ -33,7 +40,7 @@
         <button class="lang-btn" data-lang="pt">PT</button>
     </div>
 
-    <nav>
+    <nav class="glass-effect">
         <ul>
             <li>
                 <a href="#">
@@ -44,63 +51,177 @@
         </ul>
     </nav>
 
-    <div class="content">
-        <div class="hero-badge" data-i18n="badge">🔥 #1 AI Porn Generator</div>
-        <h1 data-i18n="welcome">Create Stunning AI Porn</h1>
-        <p class="subtitle" data-i18n="tagline">Generate unlimited adult content with cutting-edge AI technology. Fast, easy, and free.</p>
+    <main class="content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-badge glass-effect" data-i18n="badge">🔥 #1 AI Porn Generator</div>
+            <h1 class="hero-title" data-i18n="welcome">Create Stunning AI Porn</h1>
+            <p class="hero-subtitle" data-i18n="tagline">Generate unlimited adult content with cutting-edge AI technology. Fast, easy, and free.</p>
 
-        <div class="features-mini">
-            <div class="feature-item">✨ <span data-i18n="feat1">AI-Powered</span></div>
-            <div class="feature-item">⚡ <span data-i18n="feat2">Instant Results</span></div>
-            <div class="feature-item">🎨 <span data-i18n="feat3">Custom Styles</span></div>
-        </div>
-
-        <button id="downloadBtn" class="download-btn">
-            <span class="btn-icon" data-i18n="downloadIcon">⬇️</span>
-            <span class="btn-text" data-i18n="download">Download Now</span>
-            <span class="btn-sub">APK • Free</span>
-        </button>
-
-        <div class="stats">
-            <div class="stat">
-                <span class="stat-number" data-i18n="stat1">10M+</span>
-                <span class="stat-label" data-i18n="stat1Label">Downloads</span>
+            <div class="hero-features">
+                <div class="hero-feature glass-effect">
+                    <span class="feature-icon">✨</span>
+                    <span data-i18n="feat1">AI-Powered</span>
+                </div>
+                <div class="hero-feature glass-effect">
+                    <span class="feature-icon">⚡</span>
+                    <span data-i18n="feat2">Instant Results</span>
+                </div>
+                <div class="hero-feature glass-effect">
+                    <span class="feature-icon">🎨</span>
+                    <span data-i18n="feat3">Custom Styles</span>
+                </div>
             </div>
-            <div class="stat">
-                <span class="stat-number" data-i18n="stat2">4.9★</span>
-                <span class="stat-label" data-i18n="stat2Label">User Rating</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number" data-i18n="stat3">100%</span>
-                <span class="stat-label" data-i18n="stat3Label">Free</span>
-            </div>
-        </div>
 
-        <div class="how-it-works">
-            <h2 data-i18n="howTitle">How It Works</h2>
-            <div class="steps">
-                <div class="step">
+            <button id="downloadBtn" class="download-btn glass-effect">
+                <span class="btn-icon" data-i18n="downloadIcon">⬇️</span>
+                <span class="btn-text" data-i18n="download">Download Now</span>
+                <span class="btn-sub" data-i18n="apkSize">APK • Free</span>
+            </button>
+
+            <div class="stats">
+                <div class="stat glass-effect">
+                    <span class="stat-number" data-i18n="stat1">10M+</span>
+                    <span class="stat-label" data-i18n="stat1Label">Downloads</span>
+                </div>
+                <div class="stat glass-effect">
+                    <span class="stat-number" data-i18n="stat2">4.9★</span>
+                    <span class="stat-label" data-i18n="stat2Label">User Rating</span>
+                </div>
+                <div class="stat glass-effect">
+                    <span class="stat-number" data-i18n="stat3">100%</span>
+                    <span class="stat-label" data-i18n="stat3Label">Free</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2 class="section-title glass-effect" data-i18n="featuresTitle">Why Choose Porn Make?</h2>
+
+            <div class="features-grid">
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon-large" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">🤖</div>
+                    <h3 data-i18n="card1Title">Advanced AI</h3>
+                    <p data-i18n="card1Desc">State-of-the-art machine learning models for realistic results</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon-large" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">🚀</div>
+                    <h3 data-i18n="card2Title">Lightning Fast</h3>
+                    <p data-i18n="card2Desc">Generate content in seconds with our optimized AI engine</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon-large" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">💎</div>
+                    <h3 data-i18n="card3Title">HD Quality</h3>
+                    <p data-i18n="card3Desc">Crystal clear high-definition output every time</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon-large" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)">🎭</div>
+                    <h3 data-i18n="card4Title">Multiple Styles</h3>
+                    <p data-i18n="card4Desc">Choose from various artistic styles and preferences</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon-large" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%)">🔒</div>
+                    <h3 data-i18n="card5Title">100% Private</h3>
+                    <p data-i18n="card5Desc">Your data and creations stay on your device only</p>
+                </div>
+
+                <div class="feature-card glass-effect">
+                    <div class="feature-icon-large" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%)">📱</div>
+                    <h3 data-i18n="card6Title">Mobile First</h3>
+                    <p data-i18n="card6Desc">Optimized for Android smartphones and tablets</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-section">
+            <h2 class="section-title glass-effect" data-i18n="howTitle">How It Works</h2>
+
+            <div class="steps-container">
+                <div class="step-card glass-effect">
                     <div class="step-number">1</div>
-                    <p data-i18n="step1">Download the app</p>
+                    <div class="step-content">
+                        <h3 data-i18n="step1Title">Download the App</h3>
+                        <p data-i18n="step1Desc">Get the APK file and install it on your Android device</p>
+                    </div>
                 </div>
-                <div class="step">
+
+                <div class="step-card glass-effect">
                     <div class="step-number">2</div>
-                    <p data-i18n="step2">Enter your prompt</p>
+                    <div class="step-content">
+                        <h3 data-i18n="step2Title">Enter Your Prompt</h3>
+                        <p data-i18n="step2Desc">Describe what you want to create in detail</p>
+                    </div>
                 </div>
-                <div class="step">
+
+                <div class="step-card glass-effect">
                     <div class="step-number">3</div>
-                    <p data-i18n="step3">Get AI-generated content instantly</p>
+                    <div class="step-content">
+                        <h3 data-i18n="step3Title">Get Instant Results</h3>
+                        <p data-i18n="step3Desc">Watch as AI brings your imagination to life in seconds</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="share-section">
-            <p data-i18n="shareText">Share with friends and get more content!</p>
-            <button id="copyButton" class="copy-btn" data-i18n="copyLink">Copy Link</button>
-        </div>
-    </div>
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <h2 class="section-title glass-effect" data-i18n="testimonialsTitle">What Users Say</h2>
 
-    <div id="downloadStatus" class="download-status" role="alert" aria-live="polite"></div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-effect">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="review1">"Absolutely amazing! The AI creates exactly what I imagine. Best app ever!"</p>
+                    <div class="testimonial-user">
+                        <span class="user-avatar">👤</span>
+                        <span class="user-name" data-i18n="user1">Verified User</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-effect">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="review2">"Incredible quality and super fast. Works perfectly on my phone."</p>
+                    <div class="testimonial-user">
+                        <span class="user-avatar">👤</span>
+                        <span class="user-name" data-i18n="user2">Happy Customer</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-effect">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="review3">"Finally an app that delivers what it promises. Highly recommend!"</p>
+                    <div class="testimonial-user">
+                        <span class="user-avatar">👤</span>
+                        <span class="user-name" data-i18n="user3">Premium User</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section glass-effect">
+            <h2 data-i18n="ctaTitle">Ready to Create Amazing Content?</h2>
+            <p data-i18n="ctaSubtitle">Join millions of users creating incredible AI-generated content</p>
+            <button id="downloadBtnLarge" class="download-btn-large glass-effect">
+                <span class="btn-icon" data-i18n="downloadIcon">⬇️</span>
+                <span class="btn-text" data-i18n="downloadLarge">Download Porn Make</span>
+            </button>
+        </section>
+
+        <!-- Share Section -->
+        <section class="share-section glass-effect">
+            <h3 data-i18n="shareTitle">Share with Friends</h3>
+            <p data-i18n="shareText">Share the app and get access to exclusive features!</p>
+            <button id="copyButton" class="copy-btn glass-effect" data-i18n="copyLink">Copy Link</button>
+        </section>
+    </main>
+
+    <div id="downloadStatus" class="download-status glass-effect" role="alert" aria-live="polite"></div>
 
     <script src="languages.js"></script>
     <script src="script.js"></script>
