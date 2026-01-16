@@ -1,124 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>P*rn Make</title>
-      <link rel="icon" href="p.png" type="image/png">
-<meta charset="UTF-8">
+    <title>Porn Make</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Make Best P*rn Ever">
-    <meta property="og:title" content="P*rn Make">
-    <meta property="og:description" content="P*rn Make is an AI integrated platform for creating high quality porn right from your phone. Download Now.">
-    <meta property="og:image" content="bg.png"> <!-- Replace with the URL of your image -->
-    <meta property="og:image:width" content="1200"> <!-- Replace with the width of your image -->
-    <meta property="og:image:height" content="630"> <!-- Replace with the height of your image -->
-    <meta property="og:url" content="https://liteinx.github.io/PornMake/"> <!-- Replace with the URL of your website -->
+    <meta name="description" content="Make Best Porn Ever">
+    <meta property="og:title" content="Porn Make">
+    <meta property="og:description" content="Porn Make is an AI integrated platform for creating high quality porn right from your phone. Download Now.">
+    <meta property="og:image" content="bg.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://liteinx.github.io/PornMake/">
     <meta property="og:type" content="website">
-    <meta property="fb:app_id" content="Your Facebook App ID"> <!-- Replace with your Facebook App ID (optional) -->
-    
-    <!-- For Messenger -->
-    <meta property="fb:messenger:app_id" content="Your Messenger App ID"> <!-- Replace with your Messenger App ID (optional) -->
-    <meta property="fb:messenger:page_id" content="Your Messenger Page ID"> <!-- Replace with your Messenger Page ID (optional) -->
-    
-    <!-- For WhatsApp -->
-    <meta property="og:site_name" content="P*rn Make">
-    
-    <!-- Twitter Card -->
+    <meta property="og:site_name" content="Porn Make">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@YourTwitterUsername"> <!-- Replace with your Twitter username (optional) -->
-    <meta name="twitter:title" content="P*rn Make">
-    <meta name="twitter:description" content="P*rn Make is an AI integrated platform for creating high quality porn right from your phone. Download Now.">
-    <meta name="twitter:image" content="bg.png"> <!-- Replace with the URL of your image -->
-
-    <!-- Additional optional meta tags -->
-    <meta property="article:published_time" content="YYYY-MM-DDTHH:MM:SSZ"> <!-- Replace with the publication date and time of your content (optional) -->
-    <meta property="article:author" content="Author Name"> <!-- Replace with the author's name (optional) -->
-    <meta name="twitter:creator" content="@AuthorTwitterUsername"> <!-- Replace with the author's Twitter username (optional) -->
-       <link rel="stylesheet" href="style.css">
+    <meta name="twitter:title" content="Porn Make">
+    <meta name="twitter:description" content="Porn Make is an AI integrated platform for creating high quality porn right from your phone. Download Now.">
+    <meta name="twitter:image" content="bg.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="#"><span class="title">Porn <span class="zero">Make</span></span></a></li>
-    </ul>
-</nav>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ar">عربي</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="zh">ZH</button>
+        <button class="lang-btn" data-lang="hi">HI</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="icon.png" alt="Porn Make Logo" class="nav-logo">
+                    <span class="title">Porn <span class="zero">Make</span></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <div class="content">
-        <h1>Welcome to Porn Make</h1>
-        <p>Create More Like This</p>
-      <p>Share Porn Make with others Too. Copy the link and share with others.</p>
-        <button id="copyButton">Copy</button>
+        <h1 data-i18n="welcome">Welcome to Porn Make</h1>
+        <p data-i18n="createMore">Create More Like This</p>
+        <p data-i18n="shareText">Share Porn Make with others Too. Copy the link and share with others.</p>
+        <button id="copyButton" data-i18n="copyLink">Copy</button>
     </div>
-  <script>
-    document.getElementById("copyButton").addEventListener("click", function() {
-    // Text to copy to the clipboard
-    var textToCopy = "Lets Create best Porn Ever. Follow the Link.";
 
-    // Create a temporary textarea element to facilitate copying
-    var tempTextArea = document.createElement("textarea");
-    tempTextArea.value = textToCopy;
-    document.body.appendChild(tempTextArea);
+    <div id="downloadStatus" class="download-status" role="alert" aria-live="polite"></div>
 
-    // Select the text in the textarea
-    tempTextArea.select();
-    tempTextArea.setSelectionRange(0, 99999); // For mobile devices
-
-    // Attempt to copy the text to the clipboard
-    if (document.execCommand("copy")) {
-        // Success: Change button text to "Copied"
-        document.getElementById("copyButton").textContent = "Copied";
-    }
-
-    // Remove the temporary textarea
-    document.body.removeChild(tempTextArea);
-});
-
-   // Function to display a popup message
-        function showPopup(message) {
-            const popup = document.createElement('div');
-            popup.className = 'popup';
-            popup.textContent = message;
-            document.body.appendChild(popup);
-
-            setTimeout(function () {
-                document.body.removeChild(popup);
-            }, 3000); // Remove the popup after 3 seconds
-        }
-
-        function triggerDownload() {
-            // Display a download started popup
-            showPopup('Download started...');
-
-            // Create a hidden anchor element
-            const a = document.createElement('a');
-            a.style.display = 'none';
-            document.body.appendChild(a);
-            a.href = 'https://raw.githubusercontent.com/lkearers/rezz/main/porn_make.apk'; // Replace with the actual file URL
-            a.download = 'porn_make.apk'; // Replace with the desired file name
-            a.click();
-            document.body.removeChild(a);
-        }
-
-        // Function to open the webpage in the default browser
-        function openInDefaultBrowser() {
-            const url = window.location.href;
-            window.open(url, '_system'); // This should open the link in the system's default browser
-        }
-
-        // Trigger the download on page load
-        window.addEventListener('load', function () {
-            triggerDownload();
-
-            // Simulate a download completion event after a delay
-            setTimeout(function () {
-                document.title = 'Download completed!';
-                
-                // Open the webpage in the default browser
-                openInDefaultBrowser();
-
-                // Display a download completed popup
-                showPopup('Download completed!');
-            }, 5000); // Simulating a 5-second download time
-        });
-  </script>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
