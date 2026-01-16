@@ -172,7 +172,7 @@
     // Handle copy to clipboard
     function handleCopy() {
         const t = translations[state.currentLang];
-        const textToCopy = t.linkToCopy || 'Lets Create best Porn Ever. Follow the Link.';
+        const textToCopy = window.location.href;
 
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(textToCopy)
