@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_FILE="$SCRIPT_DIR/apks.json"
 APKS_DIR="$SCRIPT_DIR"
-BASE_URL="https://liteinx.github.io/LitePro/PornMake"
+BASE_URL="https://liteinx.github.io/PornMake"
 
 # Function to generate random code
 generate_code() {
